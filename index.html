@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        form{
+            padding: 10px;
+        }
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #ui{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 15px;
+            margin: 10px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        #ui img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="url" id="img" placeholder="image Url"><br><br>
+        <input type="text" id="title" placeholder="Product Name"><br><br>
+        <input type="number" id="price" placeholder="Product price"><br><br>
+        <input type="text" id="category" placeholder="Product category"><br><br>
+        <input type="submit">
+    </form>
+    <div class="btns">
+        <button id="htol">High To Low</button>
+        <button id="ltoh">Low To High</button>
+        <button id="man">Man</button>
+        <button id="woman">Woman</button>
+        <button id="kids">Kids</button>
+    </div>
+    <div>
+        <input type="text" id="value">
+        <button id="search">search</button>
+    </div>
+    <br><hr><br>
+    <div id="ui"></div>
+</body>
+    <script src="index.js"></script>
+</html>
